@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Requirement System</title>
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+	*{
+    font-family: 'Times New Roman', Times, serif;
+}
+.col-2 {
+    padding-left: 0px;
+}
+nav a{
+  font-size: 14px;
+}
+.scroll-bar{
+    position: fixed;
+    padding-top: 0px;
+    min-height: 100%;
+    justify-content: flex-start;
+    background-color: #4FA095;
+}
+.nav-pills a{
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
+}
+.nav-pills a:hover{
+  background-color: white;
+  color: black;
+  transition: .3s;
+}
+.page-1 h1, h2, h3, h4, h5, h6{
+  
+}
+.page-1 hr{
+    margin-top: 50px;
+    height: 5px;
+}
+@media print{
+    .scroll-bar{
+        display: none;
+    }
+}
+hr{
+    background-color: black;
+    border: none;
+}
+.dots {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .dots:after {
+    content: "..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................";
+  }
+  .part {
+    display: flex;
+    justify-content: space-between;
+  }
+  .page-2 p{
+    margin-bottom: 0px;
+    font-size: 14px;
+  }
+  .page-2{
+    font-family: 'Times New Roman', Times, serif;
+  }
+a{
+  text-decoration: none;
+  padding-left: 20px;
+
+}
+table, th, td {
+  border:1px solid black;
+}
+table{
+  text-align: left;
+  width: 80%;
+}
+table td{
+  width: 50%;
+}
+@media only screen and (max-width: 1400px)
+{
+  .scroll-bar{
+    display: none;
+  }
+}
+	
+	</style>
+    
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2">
+                <nav id="navbar-example3" class="navbar navbar-light flex-column align-items-stretch scroll-bar">
+                    <p class="navbar-brand" style="text-align: center; padding-top: 40px; color: #153462;"><strong>Virtual Classroom<br> System</strong></p> <hr style="border: 2px solid lightgray; width: 100%">
+                    <nav class="nav nav-pills flex-column" style="padding-top: 20px; font-weight: bold;">
+                      <a class="nav-link" href="#home">Home</a>
+                      <a class="nav-link" href="#content-table">Table of contents</a>
+                      <a class="nav-link" href="#Introduction">Introduction</a>
+                      <a class="nav-link" href="#Description">Overall Description</a>
+                      <a class="nav-link" href="#Interface-requirements">External Interface Requirements</a>
+                      <a class="nav-link" href="#System-features">System Features</a>
+                      <a class="nav-link" href="#Nonfunctional-requirements">Other Nonfunctional Requirements</a>
+                      <a class="nav-link" href="#Other-requirements">Other Requirements</a>
+                      
+                    </nav>
+                  </nav>
+            </div>
+            <div class="col-10">
+                <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0">
+                    
+                    <div id="home" class="page-1 text-end" >
+                        <hr>
+                        <div class="row mt-4">
+                          <div class="col-7 offset-5">
+                            <h1 class="text-end fw-bold">Software Requirements<br>Specification</h1>
+                            <br><br>
+                            <h2 class="fw-bold">for</h2>
+                            <br><br>
+                            <h1 class="fw-bold">Virtual Classroom</h1>
+                            <br><br>
+                            <h5 class="fw-bold">Version 1.0</h5>
+                            <br><br>
+                            <h5 class="fw-bold">Prepared by: Talha Taiyoub, Redwan Ali Rafi, MD Zobaer Hossain Bhuiyan, Ishraquzzaman</h5>
+                            
+                            <br><br>
+                            <h5 class="fw-bold">North South University</h5>
+                            <br><br>
+                            <h5 class="fw-bold">29/10/2022</h5>
+                          </div>
+                        </div>
+                    </div>
+                    <br>
+                  <div style="break-after: page"></div>
+
+                  <div id="content-table" class="page-2">
+                    <h5>Table of Contents</h5>
+                    <div class="part">
+                      <p class="dots fw-bold" style="font-size: 15px;">Table of Contents</p>
+                      <p class="fw-bold">2</p>
+                    </div>
+                    <div>
+                      <div class="part">
+                        <p class="dots fw-bold" style="font-size: 15px;">1.  Introduction</p>
+                        <p class="fw-bold">3</p>
+                      </div>
+                      <div class="part">
+                        <p class="dots" style="margin-left: 20px;">1.1  Purpose</p>
+                        <p>3</p>
+                      </div>
+                      <div class="part">
+                        <p class="dots" style="margin-left: 20px;">1.2  Document Conventions</p>
+                        <p>3</p>
+                      </div>
+                      <div class="part">
+                        <p class="dots" style="margin-left: 20px;">1.3  Intended Audience and Reading Suggestion</p>
+                        <p>3</p>
+                      </div>
+                      <div class="part">
+                        <p class="dots" style="margin-left: 20px;">1.4  Product Scope</p>
+                        <p>3</p>
+                      </div>    
+                      <div class="part">
+                        <p class="dots" style="margin-left: 20px;">1.5  References</p>
+                        <p>4</p>
+                      </div>                     
+                    </div>
+
+                    <div>
+                      <div class="part">
+                        <p class="dots fw-bold" style="font-size: 15px;">2.  Overall Description</p>
+                        <p class="fw-bold">5</p>
+                      </div>
+                      <div class="part">
+                        <p class="dots" style="margin-left: 20px;">2.1  Product Perspective</p>
+                        <p>5</p>
+                      </div>
+                      <div class="part">
+                        <p class="dots" style="margin-left: 20px;">2.2  Product Functions</p>
+                        <p>5</p>
+                      </div>
+                      <div class="part">
+                        <p class="dots" style="margin-left: 20px;">2.3  User Classes and Characteristics</p>
+                        <p>5</p>
+                      </div>
+                      <div class="part">
+                        <p class="dots" style="margin-left: 20px;">2.4  Operating Environment</p>
+                        <p>6</p>
+                      </div>    
+                      <div class="part">
+                        <p class="dots" style="margin-left: 20px;">2.5  Design and Implementation Constraints</p>
+                        <p>6</p>
+                      </div>    
+                      <div class="part">
+                        <p class="dots" style="margin-left: 20px;">2.6  User Documentation</p>
+                        <p>6</p>
+                      </div>    
+                      <div class="part">
+                        <p class="dots" style="margin-left: 20px;">2.7  Assumptions and Dependencies</p>
+                        <p>7</p>
+                      </div>                   
+                    </div>
+
+                    <div>
+                      <div class="part">
+                        <p class="dots fw-bold" style="font-size: 15px;">3.  External Interfacem Requirements</p>
+                        <p class="fw-bold">5</p>
+                      </div>
+                      <div class="part">
+                        <p class="dots" style="margin-left: 20px;">3.1  User Interfaces</p>
+                        <p>7</p>
+                      </div>
+                      <div class="part">
+                        <p class="dots" style="margin-left: 20px;">3.2  Hardware Interfaces</p>
+                        <p>7</p>
+                      </div>
+                      <div class="part">
+                        <p class="dots" style="margin-left: 20px;">3.3  Software Interfaces</p>
+                        <p>7</p>
+                      </div>
+                                        
+                    </div>
+
+                    <div>
+                      <div class="part">
+                        <p class="dots fw-bold" style="font-size: 15px;">4.  System Features</p>
+                        <p class="fw-bold">8</p>
+                      </div>
+                      <div class="part">
+                        <p class="dots" style="margin-left: 20px;">4.1  Record Management</p>
+                        <p>8</p>
+                      </div>
+
+                    </div>
+
+                    <div>
+                      <div class="part">
+                        <p class="dots fw-bold" style="font-size: 15px;">5.  Other Nonfunctional Requirements</p>
+                        <p class="fw-bold">8</p>
+                      </div>
+                      <div class="part">
+                        <p class="dots" style="margin-left: 20px;">5.1  Performance Requirements</p>
+                        <p>8</p>
+                      </div>
+                      <div class="part">
+                        <p class="dots" style="margin-left: 20px;">5.2  Safety Requirement</p>
+                        <p>8</p>
+                      </div>
+                      <div class="part">
+                        <p class="dots" style="margin-left: 20px;">5.3  Security Requirements</p>
+                        <p>8</p>
+                      </div>
+                      <div class="part">
+                        <p class="dots" style="margin-left: 20px;">5.4  Software Quality Attributes</p>
+                        <p>9</p>
+                      </div>    
+                                       
+                    </div>
+
+                    <div>
+                      <div class="part">
+                        <p class="dots fw-bold" style="font-size: 15px;">6.  Other Requirements</p>
+                        <p class="fw-bold">9</p>
+                      </div>                  
+                    </div>
+                    
+                  <br> <br>
+                  <div style="break-after: page"></div>
+
+                  <div id="Introduction">
+                    <div class="sec1.1">
+                      <h4 class="fw-bold">1. Introduction</h4> <br>
+                      <h5 class="fw-bold"> 1.1 Purpose</h5>
+                      <p><i>This Software Requirements Specification document describes and explains all the requirements that will be implemented in Virtual Classroom (1.0). The requirements are gathered after agreeing with the clients in the meetings and the requirements are written in a way so that anybody from the clients or developers can understand without googling. The product will support multiple target platforms (Web and Android). Virtual Classroom is a cross platform product where teachers and students can interact with each other and continue their educational journey in any situation. Teacher can upload PDF flies, assign students to read that, monitor them from derived data, evaluate them through exams. On the other hand, students can see which courses they are enrolled in, read the PDF files, and appear in exams. This platform will enable them to have the flavor of physical classroom with the convenience of staying at home without bearing the hazards and expenses of commuting. To encourage in distance learning and keep the students and teachers connected through a secured platform which is easy to use is one of the primary goals of this platform.</i></p>
+                    </div>
+                    
+                    <div class="sec1.3">
+                      <h5 class="fw-bold"> 1.2	Intended Audience and Reading Suggestions</h5>
+                      <p><i>The document is intended for:</i></p>
+					  <ul>
+  
+
+<li>Developers</li>
+<li>Testers</li>
+<li>Teachers</li>
+<li>Students</li>
+<li>Anyone who has interest in Virtual-Classroom platform.</li>
+</ul><p><i>This document is split into six parts:</p></i><ul>
+<li>Section-1: Description of the purpose of the document and what to expect </li>
+<li>Section-2: Overall description of the project</li>
+<li>Section-3: External interface requirements that affect the system</li>
+<li>Section-4: Details about system features</li>
+<li>Section-5: Insight on other non-functional requirements</li>
+<li>Section-6: Other requirements</li>
+</ul>
+Each section is written in a way so that different users will read different sections. Reading each section will not come handy for every audience. The first two section is tailored for all audience where technical terms are absent. The next four sections use technical language which is intended for mainly the developers and testers.
+
+Every requirement will be detailed one by one. Good to know that more important requirements will be described in high details and less important requirements will be described in brief. 
+</i></p>
+                    </div>
+                    <div class="sec1.4">
+                      <h5 class="fw-bold"> 1.3 Product Scope</h5>
+                      <p><i>Virtual-Classroom is a platform where teachers and students will be connected in a secured way. Teachers and students will be able to continue their excellence journey even in any national crisis or pandemic through this platform. Moreover, education should be accessible for all. In the rural areas where quality teachers are absent, this platform could play a great role to nourish the students of that rural areas. Teachers can provide reading materials and students can read it. For evaluation, there will be exams and in which section students are performing well and in which sections students are confused, a report of that data will be presented to the teachers so the teachers can take necessary steps. Moreover, educational institutions can use this platform to enhance their quality of education as well. The web and android app we are developing for cross-platform use is an easily maintainable for developers and capable of handling large scale of data for the users.</i></p>
+                    </div>
+                    <div class="sec1.5">
+                      <h5 class="fw-bold"> 1.4 References</h5>
+                      <a href="https://docs.djangoproject.com/en/4.0/"><i>Django</i></a> <br>
+                      <a href="https://web.programming-hero.com/"><i>Programming-hero</i></a> <br>
+                      <a href="https://www.blackboard.com/"><i>Blackboard</i></a> <br>
+					  <a href="https://moodle.org/"><i>moodle</i></a> <br>
+					  <a href="https://classroom.google.com/"><i>Google Classroom</i></a> <br>
+					  <a href=""><i>SRS IEEE standard format</i></a> <br>
+                    </div>
+                  </div>
+                  <br> <br>
+                  <div style="break-after: page"></div>
+                  
+                  <div id="Description">
+                    <div>
+                      <h4 class="fw-bold">2.	Overall Description</h4>
+                      <br>
+                      <h5 class="fw-bold">2.1	Product Perspective</h5>
+                      <p><i>Connecting the students and teachers in a secured platform is the main driving force of specifying this project. Educational institutions need a platform where they will be able to share the reading materials with their students to accelerate their excellency. Moreover, to investigate where the students are struggling or confused, this platform will come handy. To create a classroom like environment for the users there are features to accomplish that goal.</i></p>
+                    </div>
+                    <div>
+                      <h5 class="fw-bold">2.2	Product Functions</h5>
+                      <p style="margin-bottom: 2px;"><i><ul>
+<li>	Sign-Up using verified email id and password
+</li><li>	Sign-In to existing account
+</li><li>	Creating cohorts
+</li><li>	Uploading PDF flies and set time for reading session
+</li><li>	Monitor attentiveness
+</li><li>	Setting questions for exams
+</li><li>	Retrieving exam marks along with the report where students are struggling with
+</li><li>	Viewing the cohorts
+</li><li>	Reading PDF flies
+</li><li>	Viewing the reading task and the time limit for reading session
+</li><li>	Take exams and answering questions using voice
+</li><li>	Notification about reading tasks when they are assigned
+</li><li>	Log-Out option.
+</li></ul></i></p> 
+                      
+                    </div>
+                    <div>
+                      <h5 class="fw-bold">2.3	User Classes and Characteristics</h5>
+                      <p><i>This product will include two categories of users:<br>
+(i)Teachers:</p></i>
+<ul><li>	Through Sign-Up individual account will be created for the teachers. Any teacher who has an email-id will be able to create an account by putting password in the password section.
+</li><li>	Through Sign-In, the teachers can go the dashboard.
+</li><li>	Teacher can make cohorts which consist of several students.
+</li><li>	Teacher can upload PDF files and set the time for the students to read it.
+</li><li>	Teacher can find how attentively the students are reading through a data which will be derived by some functions with the aid of camera during the reading session.
+</li><li>	Teacher can find how attentively the students are reading through a data which will be derived by some functions with the aid of camera during the reading session.
+</li><li>	After exams, teacher can see the marks of the students and in which part of which PDF files they are struggling with.
+</li><li>	Teacher can log out from the platform.
+</li></ul>
+<p><i>(ii)Students:</p></i>
+<ul><li>	Through Sign-Up individual account will be created for the students. Any student who has an email-id will be able to create an account by putting password in the password section.
+</li><li>	Through Sign-In, the students can go the dashboard.
+</li><li>	Students can view in which cohorts they are assigned.
+</li><li>	Students can see the list of reading tasks and the time limit for reading the PDF flies which are assigned by the teachers.
+</li><li>	Students can take part in exams, and they will have to answer the questions using voice.
+</li><li>	Students will get notification when new reading task is assigned. 
+</li><li>	Students can log out from the platform.
+</li></ul>
+
+
+                    </div>
+                    <div>
+                      <h5 class="fw-bold">2.4	Operating Environment</h5>
+                      <ul><i>
+                        <li><b>Platform supported:</b> Web and Android.</li>
+						<li><b>Web server:</b> Any operation system with Django 4.1 or newer installed.</li>
+						<li><b>Android app:</b> Any system with a functional web browser.</li>
+						<li><b>Database configuration:</b> SQLite</li>
+						</i>
+                      </ul>
+                    </div>
+                    <div>
+                      <h5 class="fw-bold">2.5	Design and Implementation Constraints</h5>
+                      <p><i> We have a web application and an android app, but no IOS application for the system. IOS users can use the browser to access the web version of this system. Users can only take the exam through the android app. Users cannot use other features inside the mobile app. Browsers from any platform have functional access.</i></p>
+                    </div>
+                    <div>
+                      <h5 class="fw-bold">2.6	User Documentation</h5>
+                      <p><i>The enrolled students and faculty will be provided with printable manuals through email. The system will also provide an online help feature where students or faculty can ask any question. The faculty or student can ask for help to better understand the system.</i></p>
+                    </div>
+                    <div style="break-after: page"></div>
+                    <div>
+                      <h5 class="fw-bold">2.7	Assumptions and Dependencies</h5>
+                      <p><i>Users must have a stable and working internet connection. Web users must have a working browser to use the product. Users must have a good quality web camera, and the camera must be installed in a good position where it shows the face correctly. Mobile users must have android version 6+ installed. The database will be modified to meet the system's requirements. New entities and relations for the user will need to be added.
+
+</i></p>
+                    </div>
+                  </div>
+                  <br> <br>
+
+      
+                  <div id="Interface-requirements">
+                    <div>
+                      <h4 class="fw-bold">3.	External Interface Requirements</h4>
+                      <br>
+                      <h5 class="fw-bold">3.1	User Interfaces</h5>
+                      <p><i>The users will start at the login page, where they will find a button for google login. Users can log in using a valid google account. After a faculty member logs in, they can create an exam cohort where they can add other users (students). Inside the cohort, the user (evaluator) can create assessments and add questions in the form of MCQs, short questions, and micro-viva. After setting the assessment, the students can sit for the exam. The system will use face-recognition technology to identify students. Using the web camera, the system will track the eyes of the student and detect cheating. After the due time of the exam, the system will automatically calculate the marks, and the evaluator will be able to download the mark sheet of each student. The system will analyze the script and identify the student's weakness and the evaluator/faculty can see it. Evaluators can edit the questions, answers, and marks. </i></p>
+                    </div>
+                    <div>
+                      <h5 class="fw-bold">3.2	Hardware Interfaces</h5>
+                      <p><i>For the hardware interfaces, as the system is being developed as a web application and mobile application there are no restrictions to access the web application, but the mobile application is only being developed for the Android OS. It is also expected that the user will have a general idea on how to use the mobile device camera as the mobile app will use it to scan documents.</i></p>
+                    </div>
+                    <div>
+                      <h5 class="fw-bold">3.3	Software Interfaces</h5>
+                      <p><i>For the web application part, we’ll be using basic HTML, CSS, Django, and Bootstrap. For the mobile version on the app, we’ll be using android. Communications Interfaces. The project will run on all web browsers as well as its app Communications Interfaces.</i></p>
+                    </div>
+                    
+                  </div>
+                  <br> <br>
+                  <div style="break-after: page"></div>
+      
+                  <div id="System-features">
+                    <div>
+                      <h4 class="fw-bold">4.	System Features</h4>
+                      <br>This section contains all the functional requirements of this project.<br><br>
+                      <h5 class="fw-bold">4.1	Record Management</h5>
+                      <p><i>
+                       <b>User: Teachers</b><br>
+						<ul><li>	View Dashboard.
+						</li><li>	Create folders and upload Document.
+						</li><li>	Create groups and assign students to groups.
+						</li><li>	A student can be assigned to multiple groups by different faculty members.
+						</li><li>	Students can also be added to preexisting groups.
+						</li><li>	View notifications.
+						</li><li>	Push notification through both email and mobile app.
+						</li><li>	Assign users to files and folders.
+						</li><li>	Only permitted users and groups can view the uploaded records in the assigned folders.
+						</li><li>	Route records to one or more user accounts.
+						</li></ul>
+						<b>User: Students</b><br>
+						<ul><li>	View Dashboard.
+						</li><li>	Upload documents and assignments.
+						</li><li>	View folders.
+						</li><li>	View group members information.
+						</li><li>	Only for members assigned to the same group
+						</li><li>	Chat with other members and faculty.
+						</li><ul>
+					   </i></p>
+                    </div>
+
+                    
+
+
+                  <div id="Nonfunctional-requirements">
+                    <div class="sec1.1">
+                      <h4 class="fw-bold">5. Other Nonfunctional Requirements</h4> <br>
+                      <h5 class="fw-bold">5.1	Performance Requirements</h5>
+                      <i>
+                        <ul><li>Fast User experience.
+</li><li>	Able to deal with high volume of data.
+</li><li>	Use of mic.
+</li><li>	Use of camera.
+</li></ul>
+                      </i>
+                    </div>
+                    <div class="sec1.2">
+                      <h5 class="fw-bold">5.2	Safety Requirements</h5>
+                      <i>
+                        <p>Backup and recovery mechanism for the digitized documents.</p>
+                      </i>
+                    </div>
+                    <div class="sec1.3">
+                      <h5 class="fw-bold"> 5.3	Security Requirements</h5>
+                      <i>
+                        <ul>
+                          <li>Account Security.</li>
+                          <li>Secure Database.</li>
+                          <li>Two factor authentication.</li>
+                          <li>Only students and faculty can login</li>
+                        </ul>
+                      </i>
+                    </div>
+                    <div class="sec1.4">
+                      <h5 class="fw-bold">5.4	Software Quality Attributes</h5>
+                      <i>
+                        <ul><li>	Internet Connection.
+						</li><li>	Available.
+						</li><li>	Reliable.
+						</li><li>	Maintainable.
+						</li><li>	Effective
+						</li><li>	Technologically advanced.
+						</li><li>	User friendly and organized.
+						</li><li>	Cost efficient.
+						</li></ul>
+                      </i>
+                    </div>
+                    
+                  </div>
+                  <br> <br>
+
+                  <div id="Other-requirements">
+                    <div>
+                      <h4 class="fw-bold">6.	Other Requirements</h4> <br> <br>
+                    </div>
+                  </div>
+                  <div style="break-after: page"></div>
+                  <div id="Appendix">
+                    <div>
+                      <br>
+                      <div style="margin-left: 20px;">
+                        <p style="margin-bottom: 0px;"><i>
+											  
+					<ul><li>	The learning management system has a dashboard for private and public folders, uploaded documents and notifications.
+					</li><li>	The system will have a public repository where users can only view the uploaded/created records in the assigned public folder.
+					</li><li>	Everyone will have a private repository, containing private and shared files and folders.
+					</li><li>	Digitized documents can be linked into the records on File Server
+					</li></ul> </i></p>
+                      </div>
+                    </div>
+                    
+                  </div>
+				  <br><br><hr><br>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
